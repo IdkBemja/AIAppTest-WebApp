@@ -1,4 +1,4 @@
-# ![UrraHosting Logo](https://github.com/IdkBemja/Urrahost/blob/main/assets/imgs/logo.png)
+<img src="https://github.com/IdkBemja/Urrahost/blob/main/assets/imgs/logo.png" alt="UrraHosting Logo" width="180"/>
 
 # AI Chat Test (Web & Mobile Backend)
 
