@@ -1,4 +1,10 @@
+# ![UrraHosting Logo](https://github.com/IdkBemja/Urrahost/blob/main/assets/imgs/logo.png)
+
 # AI Chat Test (Web & Mobile Backend)
+
+**Hosted on [UrraHosting](https://urrahost.app)**
+
+**Production URL:** [https://aichattest.urrahost.app](https://aichattest.urrahost.app)
 
 AI Chat Test es una plataforma de backend en Python Flask con MySQL, diseñada para servir como base de un sistema de chat con IA, integrable tanto con una app web como con una futura app móvil Android.
 
