@@ -1,7 +1,7 @@
 from app.utils.jwt import add_token_to_blacklist, is_token_blacklisted
-from Flask import request, jsonify
+from flask import request, jsonify
 from app import app
-from app.models import User
+from app.models.Users import User
 from flask_bcrypt import Bcrypt
 from app.utils.jwt import generate_jwt, decode_jwt
 from app.utils.OpenAIUtil import ask_openai

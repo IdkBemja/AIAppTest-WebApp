@@ -27,11 +27,8 @@ def ensure_databases_and_tables():
     password = db_conf['password']
     port = db_conf['port']
     dbname = db_conf['dbname']
-    dbname_blacklist = db_conf.get('dbname_blacklist_jwt') or dbname
 
     dbs = [dbname]
-    if dbname_blacklist and dbname_blacklist != dbname:
-        dbs.append(dbname_blacklist)
 
     # Connect to MySQL server (no database selected)
     conn = pymysql.connect(host=host, user=user, password=password, port=port, autocommit=True)
@@ -44,11 +41,7 @@ def ensure_databases_and_tables():
     # Create tables in main db
     cursor.execute(f"USE `{dbname}`;")
     cursor.execute(USER_TABLE_SQL)
-
-    # Create tables in blacklist db (if different)
-    if dbname_blacklist:
-        cursor.execute(f"USE `{dbname_blacklist}`;")
-        cursor.execute(JWT_BLACKLIST_TABLE_SQL)
+    cursor.execute(JWT_BLACKLIST_TABLE_SQL)
 
     cursor.close()
     conn.close()

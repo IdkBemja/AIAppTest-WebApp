@@ -1,5 +1,5 @@
-from utils.mysqlconnection import connectToMySQL
-from utils.config.env_config import get_db
+from app.utils.mysqlconnection import connectToMySQL
+from app.utils.config.env_config import get_db
 import jwt
 import datetime
 from app.utils.config.env_config import get_secret_key

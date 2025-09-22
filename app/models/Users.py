@@ -1,6 +1,6 @@
 
-from utils.mysqlconnection import connectToMySQL
-from utils.config.env_config import get_db
+from app.utils.mysqlconnection import connectToMySQL
+from app.utils.config.env_config import get_db
 from jwt import ExpiredSignatureError, InvalidTokenError
 from app.utils.jwt import decode_jwt
 
