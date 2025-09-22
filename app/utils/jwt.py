@@ -4,7 +4,7 @@ import jwt
 import datetime
 from app.utils.config.env_config import get_secret_key
 
-database = get_db()['dbname_blacklist_jwt']
+database = get_db()['dbname']
 
 def generate_jwt(data_list, expires_in_minutes=60):
 	payload = {

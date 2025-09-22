@@ -48,7 +48,6 @@ DB_PORT=3306
 DB_USER=usuario
 DB_PASSWORD=contraseña
 DB_NAME=ai_chat_db
-DB_Blacklist_JWT=ai_chat_blacklist_db  # (opcional, puede ser igual a DB_NAME)
 SECRET_KEY=clave_secreta_para_jwt
 ```
 

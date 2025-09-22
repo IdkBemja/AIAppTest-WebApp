@@ -13,8 +13,7 @@ def get_db():
         'port': int(os.getenv('DB_PORT', 3306)),
         'user': os.getenv('DB_USER', 'user'),
         'password': os.getenv('DB_PASSWORD', 'password'),
-        'dbname': os.getenv('DB_NAME', 'database'),
-        'dbname_blacklist_jwt': os.getenv('DB_Blacklist_JWT')
+        'dbname': os.getenv('DB_NAME', 'database')
     }    
 
     return database
